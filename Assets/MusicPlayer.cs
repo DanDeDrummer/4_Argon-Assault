@@ -5,18 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class MusicPlayer : MonoBehaviour
 {
-    // Start is called before the first frame update
+    bool firstLoad = true;
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
     void Start()
     {
-        
         
     }
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
+        //TODO check if splash screen
+        if (Input.GetKey(KeyCode.Space) && firstLoad == true)
         {
             LoadFirstScene();
+            firstLoad = false;
+            print("Space!");
         }
     }
 
