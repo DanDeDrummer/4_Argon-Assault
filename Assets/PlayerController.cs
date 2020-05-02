@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerController : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class PlayerController : MonoBehaviour
         
         //TODO Extract Method
         //Horizontal Axis
-        float horizontalThrow = Input.GetAxis("Horizontal");
+        float horizontalThrow = CrossPlatformInputManager.GetAxis("Horizontal");
         print(horizontalThrow);
         /*var newXPos = Mathf.Clamp(transform.position.x + deltaX, xMin, xMax);
         //Vertical Axis
