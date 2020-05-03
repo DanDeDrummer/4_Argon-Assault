@@ -9,8 +9,8 @@ public class PlayerController : MonoBehaviour
    [Tooltip("In ms^-1")] [SerializeField] float xSpeed = 4f;
    [Tooltip("In m")] [SerializeField] float xRange = 3.66f;
    [Tooltip("In ms^-1")] [SerializeField] float ySpeed = 40f;
-   float yRangeMin = -1.78f;
-   float yRangeMax = 1.78f;
+   [SerializeField] float yRangeMin = -1.78f;
+   [SerializeField] float yRangeMax = 1.78f;
    float xThrow, yThrow;
 
    [SerializeField] float positionPitchFactor = -5f;
