@@ -800,6 +800,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 702757944}
     m_Modifications:
+    - target: {fileID: 1872201912, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4, type: 3}
+      propertyPath: xSpeed
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 9037521966280991990, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4,
         type: 3}
       propertyPath: m_Name
@@ -808,17 +812,17 @@ PrefabInstance:
     - target: {fileID: 9037521966280991991, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0000011026859
+      value: -3.66
       objectReference: {fileID: 0}
     - target: {fileID: 9037521966280991991, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.00000500679
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9037521966280991991, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.1744804
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9037521966280991991, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4,
         type: 3}
