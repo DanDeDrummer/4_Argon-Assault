@@ -7,11 +7,19 @@ using UnityStandardAssets.CrossPlatformInput;
 public class PlayerController : MonoBehaviour
 {
    [Tooltip("In ms^-1")] [SerializeField] float xSpeed = 4f;
-   [Tooltip("In ms^-1")] [SerializeField] float xRange = 3.66f;
+   [Tooltip("In m")] [SerializeField] float xRange = 3.66f;
    [Tooltip("In ms^-1")] [SerializeField] float ySpeed = 40f;
+   float yRangeMin = -1.78f;
+   float yRangeMax = 1.78f;
+   float xThrow, yThrow;
 
-    float yRangeMin = -1.78f;
-    float yRangeMax = 1.78f;
+   [SerializeField] float positionPitchFactor = -5f;
+   [SerializeField] float controlPitchFactor = -20f;
+   [SerializeField] float positionYawFactor = 5f;
+   [SerializeField] float controlRollFactor = -20f;
+    
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -29,19 +37,22 @@ public class PlayerController : MonoBehaviour
 
     private void ProcessRotation()
     {
-        transform.localRotation = Quaternion.Euler(0f,90f,0f);
+        float pitch = (transform.localPosition.y * positionPitchFactor) + (yThrow * controlPitchFactor);
+        float yaw = transform.localPosition.x * positionYawFactor;
+        float roll = (xThrow * controlRollFactor);
+        transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
     }
 
     private void ProcessTranslation()
     {
         //Horizontal Axis
-        float xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
+        xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
         float xOffest = xThrow * xSpeed * Time.deltaTime;
         float rawXPos = transform.localPosition.x + xOffest;
         float clampedXPos = Mathf.Clamp(rawXPos, -xRange, xRange);
 
         //Vertical Axis
-        float yThrow = CrossPlatformInputManager.GetAxis("Vertical");
+        yThrow = CrossPlatformInputManager.GetAxis("Vertical");
         float yOffset = yThrow * ySpeed * Time.deltaTime;
         float rawYPos = transform.localPosition.y + yOffset;
         float clampedYPos = Mathf.Clamp(rawYPos, yRangeMin, yRangeMax);

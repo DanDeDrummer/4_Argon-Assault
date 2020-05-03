@@ -804,6 +804,18 @@ PrefabInstance:
       propertyPath: xSpeed
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 1872201912, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4, type: 3}
+      propertyPath: controlRollFactor
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872201912, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4, type: 3}
+      propertyPath: controlPitchFactor
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872201912, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4, type: 3}
+      propertyPath: positionYawFactor
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 9037521966280991990, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4,
         type: 3}
       propertyPath: m_Name
