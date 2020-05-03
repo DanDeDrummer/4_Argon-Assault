@@ -5,6 +5,7 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerController : MonoBehaviour
 {
+   [Tooltip("In ms^-1")] [SerializeField] float xSpeed = 4f;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,8 +18,9 @@ public class PlayerController : MonoBehaviour
         
         //TODO Extract Method
         //Horizontal Axis
-        float horizontalThrow = CrossPlatformInputManager.GetAxis("Horizontal");
-        print(horizontalThrow);
+        float xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
+        float xOffest = xThrow * xSpeed * Time.deltaTime;
+        print(xOffest);
         /*var newXPos = Mathf.Clamp(transform.position.x + deltaX, xMin, xMax);
         //Vertical Axis
         var deltaY = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
