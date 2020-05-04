@@ -3,18 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MusicPlayer : MonoBehaviour
+public class SceneLoader : MonoBehaviour
 {
     bool firstLoad = true;
-
-    private void Awake()
-    {
-        DontDestroyOnLoad(gameObject);
-    }
-    void Start()
-    {
-        
-    }
 
     private void Update()
     {
