@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9037521966280991991}
   - component: {fileID: 1872201912}
+  - component: {fileID: 6133042770115713454}
   m_Layer: 0
   m_Name: PlayerShip_One
   m_TagString: Untagged
@@ -68,6 +69,19 @@ MonoBehaviour:
   controlPitchFactor: -20
   positionYawFactor: 6.5
   controlRollFactor: -30
+--- !u!65 &6133042770115713454
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9037521966280991990}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.4892488, y: 1.4128916, z: 3.4273322}
+  m_Center: {x: 0.041598797, y: 0.20644523, z: -0.32749712}
 --- !u!1001 &146848452192741970
 PrefabInstance:
   m_ObjectHideFlags: 0
