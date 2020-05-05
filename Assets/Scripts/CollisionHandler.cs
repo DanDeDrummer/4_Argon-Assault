@@ -7,14 +7,17 @@ using UnityEngine.SceneManagement;
 public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] GameObject deathFX;
+    string otherCollider;
+
     private void OnTriggerEnter(Collider other)
     {
+        otherCollider = other.name;
         StartDeathSequence();
     }
 
     private void StartDeathSequence()
     {       
-        print("Player Dying");
+        print("Player Dying from" + otherCollider);
         SendMessage("OnPlayerDeath");
         deathFX.SetActive(true);
         Invoke("ReloadScene",2f);
