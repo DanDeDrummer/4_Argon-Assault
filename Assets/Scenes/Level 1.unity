@@ -644,6 +644,12 @@ Transform:
   m_Father: {fileID: 1697512331}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &194901558 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5106929729610858246, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1872201909}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &215123341
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,6 +720,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &216194643 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 231250619, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1872201909}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &241087596
 GameObject:
   m_ObjectHideFlags: 0
@@ -1791,6 +1803,12 @@ PrefabInstance:
     - {fileID: 0}
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: e14d375f5a36551479fc2f172353b1ba, type: 3}
+--- !u!1 &763361207 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1279728691746485239, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1872201909}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &790941162
 GameObject:
   m_ObjectHideFlags: 0
@@ -3189,6 +3207,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1440306787}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1450210702 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6469823432969332168, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1872201909}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1477706263
 GameObject:
   m_ObjectHideFlags: 0
@@ -4065,6 +4089,48 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 702757944}
     m_Modifications:
+    - target: {fileID: 231250596, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 231250596, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4, type: 3}
+      propertyPath: prewarm
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 231250619, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4, type: 3}
+      propertyPath: m_Name
+      value: Gun_Right_Top
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872201912, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4, type: 3}
+      propertyPath: guns.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872201912, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4, type: 3}
+      propertyPath: guns.Array.data[0]
+      value: 
+      objectReference: {fileID: 216194643}
+    - target: {fileID: 1872201912, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4, type: 3}
+      propertyPath: guns.Array.data[1]
+      value: 
+      objectReference: {fileID: 763361207}
+    - target: {fileID: 1872201912, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4, type: 3}
+      propertyPath: guns.Array.data[2]
+      value: 
+      objectReference: {fileID: 1450210702}
+    - target: {fileID: 1872201912, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4, type: 3}
+      propertyPath: guns.Array.data[3]
+      value: 
+      objectReference: {fileID: 194901558}
+    - target: {fileID: 1279728691746485224, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4,
+        type: 3}
+      propertyPath: prewarm
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279728691746485239, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4,
+        type: 3}
+      propertyPath: m_Name
+      value: Gun_Right_Bot
+      objectReference: {fileID: 0}
     - target: {fileID: 1871413018862937059, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4,
         type: 3}
       propertyPath: m_IsActive
@@ -4084,6 +4150,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5106929729610858246, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4,
+        type: 3}
+      propertyPath: m_Name
+      value: Gun_Left_Bot
+      objectReference: {fileID: 0}
+    - target: {fileID: 5106929729610858265, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4,
+        type: 3}
+      propertyPath: prewarm
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469823432969332168, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4,
+        type: 3}
+      propertyPath: m_Name
+      value: Gun_Left_Top
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469823432969332183, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4,
+        type: 3}
+      propertyPath: prewarm
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9037521966280991990, guid: 395e7b9ebaf4ef0459e3e30bc181c1a4,
         type: 3}

@@ -6,27 +6,25 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerController : MonoBehaviour
 {
-   [Header("General")]
-   [Tooltip("In ms^-1")] [SerializeField] float xSpeed = 4f;
-   [Tooltip("In m")] [SerializeField] float xRange = 3.66f;
-   [Tooltip("In ms^-1")] [SerializeField] float ySpeed = 40f;
-   [SerializeField] float yRangeMin = -1.78f;
-   [SerializeField] float yRangeMax = 1.78f;
-  
+    [Header("General")]
+    [Tooltip("In ms^-1")] [SerializeField] float xSpeed = 4f;
+    [Tooltip("In m")] [SerializeField] float xRange = 3.66f;
+    [Tooltip("In ms^-1")] [SerializeField] float ySpeed = 40f;
+    [SerializeField] float yRangeMin = -1.78f;
+    [SerializeField] float yRangeMax = 1.78f;
 
-   [Header("Screen-position Based")]
-   [SerializeField] float positionPitchFactor = -5f;
-   [SerializeField] float positionYawFactor = 5f;
 
-   [Header("Control Throw Based")]
-   [SerializeField] float controlPitchFactor = -20f;
-   [SerializeField] float controlRollFactor = -20f;
+    [Header("Screen-position Based")]
+    [SerializeField] float positionPitchFactor = -5f;
+    [SerializeField] float positionYawFactor = 5f;
+
+    [Header("Control Throw Based")]
+    [SerializeField] float controlPitchFactor = -20f;
+    [SerializeField] float controlRollFactor = -20f;
 
     [Header("Guns")]
-    [SerializeField] GameObject Gun1;
-    [SerializeField] GameObject Gun2;
-    [SerializeField] GameObject Gun3;
-    [SerializeField] GameObject Gun4;
+    [SerializeField] GameObject[] guns;
+
     float xThrow, yThrow;
    bool isControlEnabled = true;
 
@@ -40,18 +38,51 @@ public class PlayerController : MonoBehaviour
         {
             ProcessTranslation();
             ProcessRotation();
+            ProcessFiring();
         }
 
     }
+
+    private void ProcessFiring()
+    {
+        if (CrossPlatformInputManager.GetButton("Fire"))
+        {
+            print("Fire");
+            ActivateGuns();
+        }
+        else
+        {
+            DeactivateGuns();
+        }
+    }
+
+    private void ActivateGuns()
+    {
+        foreach (GameObject gun in guns)
+        {
+            gun.SetActive(true);
+        }
+    }
+
+
+
+    private void DeactivateGuns()
+    {
+        foreach (GameObject gun in guns)
+        {
+            gun.SetActive(false);
+        }
+    }
+
 
     void OnPlayerDeath()//called by styrring reference
     {
         isControlEnabled = false;
         //TODO Move to fire button
-        Gun1.SetActive(false);
+        /*Gun1.SetActive(false);
         Gun2.SetActive(false);
         Gun3.SetActive(false);
-        Gun4.SetActive(false);
+        Gun4.SetActive(false);*/
     }
 
     private void ProcessRotation()
