@@ -24,5 +24,16 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    public void CallReloadScene()
+    {
+        StartCoroutine(ReloadScene()); 
+    }
+
+    IEnumerator ReloadScene()
+    {
+       yield return new WaitForSeconds(1f);
+       SceneManager.LoadScene(1);
+    }
+
 
 }

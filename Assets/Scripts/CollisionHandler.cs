@@ -2,12 +2,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
 
 public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] GameObject deathFX;
     string otherCollider;
+    SceneLoader sceneLoader;
+
+    private void Start()
+    {
+        sceneLoader = FindObjectOfType<SceneLoader>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -18,14 +24,10 @@ public class CollisionHandler : MonoBehaviour
     private void StartDeathSequence()
     {       
         print("Player Dying from" + otherCollider);
-        SendMessage("OnPlayerDeath");
+        SendMessage("OnPlayerDeath");//PlayerController Script
         deathFX.SetActive(true);
-        Invoke("ReloadScene",2f);
+        sceneLoader.CallReloadScene();
     }
 
-    public void ReloadScene()
-    {
-        SceneManager.LoadScene(1);
-        print("Reloaded Scene");
-    }
+    
 }

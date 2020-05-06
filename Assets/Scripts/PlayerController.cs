@@ -21,7 +21,13 @@ public class PlayerController : MonoBehaviour
    [Header("Control Throw Based")]
    [SerializeField] float controlPitchFactor = -20f;
    [SerializeField] float controlRollFactor = -20f;
-   float xThrow, yThrow;
+
+    [Header("Guns")]
+    [SerializeField] GameObject Gun1;
+    [SerializeField] GameObject Gun2;
+    [SerializeField] GameObject Gun3;
+    [SerializeField] GameObject Gun4;
+    float xThrow, yThrow;
    bool isControlEnabled = true;
 
 
@@ -41,6 +47,11 @@ public class PlayerController : MonoBehaviour
     void OnPlayerDeath()//called by styrring reference
     {
         isControlEnabled = false;
+        //TODO Move to fire button
+        Gun1.SetActive(false);
+        Gun2.SetActive(false);
+        Gun3.SetActive(false);
+        Gun4.SetActive(false);
     }
 
     private void ProcessRotation()
