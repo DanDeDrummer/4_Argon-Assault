@@ -5,15 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    bool firstLoad = true;
+    int currentSceneIndex;
+
+    private void Start()
+    {
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+    }
+
 
     private void Update()
     {
         //TODO check if splash screen
-        if (Input.GetKey(KeyCode.Space) && firstLoad == true)
+        if (Input.GetKey(KeyCode.Space) && currentSceneIndex == 0)
         {
             LoadFirstScene();
-            firstLoad = false;
             print("Space!");
         }
     }
