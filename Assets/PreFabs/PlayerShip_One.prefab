@@ -5032,6 +5032,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bullets_Right_Top
       objectReference: {fileID: 0}
+    - target: {fileID: 146848452264538358, guid: 77f045c139adfdf4ebcbdcf9f2d52862,
+        type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146848452264538358, guid: 77f045c139adfdf4ebcbdcf9f2d52862,
+        type: 3}
+      propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146848452264538358, guid: 77f045c139adfdf4ebcbdcf9f2d52862,
+        type: 3}
+      propertyPath: CollisionModule.m_Bounce.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 146848452264538358, guid: 77f045c139adfdf4ebcbdcf9f2d52862,
+        type: 3}
+      propertyPath: CollisionModule.minKillSpeed
+      value: 10000000
+      objectReference: {fileID: 0}
+    - target: {fileID: 146848452264538358, guid: 77f045c139adfdf4ebcbdcf9f2d52862,
+        type: 3}
+      propertyPath: CollisionModule.maxKillSpeed
+      value: 100000000
+      objectReference: {fileID: 0}
+    - target: {fileID: 146848452264538358, guid: 77f045c139adfdf4ebcbdcf9f2d52862,
+        type: 3}
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77f045c139adfdf4ebcbdcf9f2d52862, type: 3}
 --- !u!4 &231250618 stripped
@@ -5106,6 +5136,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bullets_Right_Bot
+      objectReference: {fileID: 0}
+    - target: {fileID: 146848452264538358, guid: 77f045c139adfdf4ebcbdcf9f2d52862,
+        type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146848452264538358, guid: 77f045c139adfdf4ebcbdcf9f2d52862,
+        type: 3}
+      propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146848452264538358, guid: 77f045c139adfdf4ebcbdcf9f2d52862,
+        type: 3}
+      propertyPath: CollisionModule.m_Bounce.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 146848452264538358, guid: 77f045c139adfdf4ebcbdcf9f2d52862,
+        type: 3}
+      propertyPath: CollisionModule.minKillSpeed
+      value: 10000000
+      objectReference: {fileID: 0}
+    - target: {fileID: 146848452264538358, guid: 77f045c139adfdf4ebcbdcf9f2d52862,
+        type: 3}
+      propertyPath: CollisionModule.maxKillSpeed
+      value: 100000000
+      objectReference: {fileID: 0}
+    - target: {fileID: 146848452264538358, guid: 77f045c139adfdf4ebcbdcf9f2d52862,
+        type: 3}
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77f045c139adfdf4ebcbdcf9f2d52862, type: 3}
@@ -5182,6 +5242,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bullets_Left_Bot
       objectReference: {fileID: 0}
+    - target: {fileID: 146848452264538358, guid: 77f045c139adfdf4ebcbdcf9f2d52862,
+        type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146848452264538358, guid: 77f045c139adfdf4ebcbdcf9f2d52862,
+        type: 3}
+      propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146848452264538358, guid: 77f045c139adfdf4ebcbdcf9f2d52862,
+        type: 3}
+      propertyPath: CollisionModule.m_Bounce.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 146848452264538358, guid: 77f045c139adfdf4ebcbdcf9f2d52862,
+        type: 3}
+      propertyPath: CollisionModule.minKillSpeed
+      value: 10000000
+      objectReference: {fileID: 0}
+    - target: {fileID: 146848452264538358, guid: 77f045c139adfdf4ebcbdcf9f2d52862,
+        type: 3}
+      propertyPath: CollisionModule.maxKillSpeed
+      value: 100000000
+      objectReference: {fileID: 0}
+    - target: {fileID: 146848452264538358, guid: 77f045c139adfdf4ebcbdcf9f2d52862,
+        type: 3}
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77f045c139adfdf4ebcbdcf9f2d52862, type: 3}
 --- !u!4 &5106929729610858247 stripped
@@ -5256,6 +5346,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bullets_Left_Top
+      objectReference: {fileID: 0}
+    - target: {fileID: 146848452264538358, guid: 77f045c139adfdf4ebcbdcf9f2d52862,
+        type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146848452264538358, guid: 77f045c139adfdf4ebcbdcf9f2d52862,
+        type: 3}
+      propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146848452264538358, guid: 77f045c139adfdf4ebcbdcf9f2d52862,
+        type: 3}
+      propertyPath: CollisionModule.m_Bounce.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 146848452264538358, guid: 77f045c139adfdf4ebcbdcf9f2d52862,
+        type: 3}
+      propertyPath: CollisionModule.minKillSpeed
+      value: 10000000
+      objectReference: {fileID: 0}
+    - target: {fileID: 146848452264538358, guid: 77f045c139adfdf4ebcbdcf9f2d52862,
+        type: 3}
+      propertyPath: CollisionModule.maxKillSpeed
+      value: 100000000
+      objectReference: {fileID: 0}
+    - target: {fileID: 146848452264538358, guid: 77f045c139adfdf4ebcbdcf9f2d52862,
+        type: 3}
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77f045c139adfdf4ebcbdcf9f2d52862, type: 3}
