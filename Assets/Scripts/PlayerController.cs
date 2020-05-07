@@ -48,31 +48,26 @@ public class PlayerController : MonoBehaviour
         if (CrossPlatformInputManager.GetButton("Fire"))
         {
             print("Fire");
-            ActivateGuns();
+            SetGunsActive(true);
         }
         else
         {
-            DeactivateGuns();
+            SetGunsActive(false);
         }
     }
 
-    private void ActivateGuns()
+    private void SetGunsActive(bool isActive)
     {
         foreach (GameObject gun in guns)
         {
-            gun.SetActive(true);
+            var particleSystem = gun.GetComponent<ParticleSystem>().emission;
+            particleSystem.enabled = isActive;
         }
     }
 
 
 
-    private void DeactivateGuns()
-    {
-        foreach (GameObject gun in guns)
-        {
-            gun.SetActive(false);
-        }
-    }
+
 
 
     void OnPlayerDeath()//called by styrring reference
